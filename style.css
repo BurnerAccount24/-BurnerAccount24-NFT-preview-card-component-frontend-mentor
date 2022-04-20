@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', serif;
+}
+body{
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+.topimg{
+    position: relative;
+}
+.topimg img{
+    height: 360px;
+    border-radius: 7px;
+    margin-top: 19px;
+    margin-left: 20px;
+    cursor: pointer;
+
+
+}
+.active{
+    position: absolute;
+    bottom: 1%;
+    left: 19px;
+    height: 360px;
+    width: 360px;
+    border-radius: 7px;
+    /* background: rgba(0, 255, 255, 0.384); */
+    background: hsla(178, 100%, 50%,0.5);
+    display: none;
+    cursor: pointer;
+
+
+}
+.active img{
+    position: relative;
+    height: 50px;
+    top: 38%;
+    left: 38%;
+}
+.topimg:active .active{
+    display: block;
+}
+
+.card{
+    margin: 130px auto ;
+    height: 650px;
+    width: 400px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    box-shadow: 25px 20px 50px rgba(0, 0, 0, 0.12);
+
+}
+.card h1{
+ margin-left: 20px;
+ color: hsl(0, 0%, 100%);
+ padding: 15px 0 16px 0;
+ font-size: 20px;
+ font-weight: 400 ;
+ cursor: pointer;
+
+}
+.card h1:active{
+    color:hsl(178, 100%, 50%) ;
+}
+.card p {
+    font-size: 18px;
+    margin-left: 20px;
+    padding-bottom: 19px;
+    color:  hsl(215, 51%, 70%);
+}
+.content{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+.content img{
+    height: 26px;
+    vertical-align: middle;
+    padding-right: 5px;
+
+}
+.section1 span{
+    color: hsl(178, 100%, 50%);
+}
+.section2 span{
+    color:  hsl(215, 51%, 70%);
+    margin-right: 33px;
+
+}
+.creator{
+    margin-left: 20px;
+    margin-top: 22px;
+    border-top: 1.2px hsl(215, 32%, 27%) solid;
+    /* background-color: azure; */
+    width: 87%;
+    display: flex;
+    align-items: center;
+
+}
+
+.creator img{
+    border: 2px hsl(0, 0%, 100%) solid;
+    border-radius: 50%;
+    width: 14%;
+    /* vertical-align: middle; */
+    margin-top: 20px;
+
+}
+.creator p{
+    /* display: inline; */
+    font-size: 18px;
+    padding-top: 28px;
+
+
+
+}
+.creator span{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.creator span:active{
+    color:hsl(178, 100%, 50%) ;
+}
+
+.attribution{
+    color: white;
+    text-align: center;
+}
